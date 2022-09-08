@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-
+import './style/modal.scss'
 
 function Modal ({children, setModalState, title}) {
 
@@ -23,9 +23,11 @@ function Modal ({children, setModalState, title}) {
 
     return (
         <div className="modal-container">
-            <button className="modal-close" onClick={(e) => handleCloseModal(e)}>X</button>
-            {title && (<h2>{title}</h2>)}
-            {children}
+            <button className="modal-close" onClick={(e) => handleCloseModal(e)}>✕</button>
+            <div className="modal-content">
+                {title && (<h2>{title}</h2>)}
+                {children}
+            </div>
         </div>
     )
 }

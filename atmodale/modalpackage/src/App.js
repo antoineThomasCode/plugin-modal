@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <button onClick={(e) => openModal(e)}>Display modale</button>
-      {modalState ? (<Modal setModalState={setModalState} title={'Je suis un modal'} />) : null}
+      {modalState ? (<Modal setModalState={setModalState} title={'Je suis une modal'} />) : null}
     </div>
   );
 }
