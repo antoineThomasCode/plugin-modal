@@ -1,8 +1,0 @@
-{
-  "name": "atmodale",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "sass": "^1.54.9"
-  }
-}

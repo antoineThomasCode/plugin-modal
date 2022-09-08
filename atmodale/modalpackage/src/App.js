@@ -6,13 +6,13 @@ import React, {useState} from 'react';
 function App() {
 
   const [modalState, setModalState]  = useState(false);
-  function handleClik (e) {
+  function openModal (e) {
     e.preventDefault()
     setModalState(true)
   }
   return (
     <div className="App">
-      <button onClick={(e) => handleClik(e)}>Display modale</button>
+      <button onClick={(e) => openModal(e)}>Display modale</button>
       {modalState ? (<Modal setModalState={setModalState} title={'Je suis un modal'} />) : null}
     </div>
   );
